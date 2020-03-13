@@ -9,9 +9,9 @@ infrastructureConfig:
   parameters:
     - JDK : ORACLE_JDK8
   includes:
-    - RHEL-7.4
+    - CentOS-7.5
     - OracleJDK-8
-    - MySQL-8.0
+    - Oracle-SE2-19.0
    
   provisioners:
     - name: dev-wso2am-intg-deployment
