@@ -9,7 +9,7 @@ infrastructureConfig:
   parameters:
     - JDK : ORACLE_JDK8
   includes:
-    - RHEL-7.6
+    - RHEL-7.4
     - OracleJDK-8
     - Oracle-SE2-19.0
    
