@@ -11,7 +11,7 @@ infrastructureConfig:
   includes:
     - RHEL-7.4
     - OracleJDK-8
-    - Oracle-SE2-19.0
+    - MySQL-8.0
    
   provisioners:
     - name: dev-wso2am-intg-deployment
