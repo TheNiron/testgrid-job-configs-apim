@@ -9,9 +9,6 @@ infrastructureConfig:
   parameters:
     - JDK : ORACLE_JDK8
   includes:
-   # - Windows-2016
-   # - OracleJDK-8
-   # - MySQL-8.0
     - RHEL-8
     - OracleJDK-8
     - Oracle-SE2-19.0
