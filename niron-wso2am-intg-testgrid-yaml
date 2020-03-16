@@ -7,12 +7,11 @@ infrastructureConfig:
   infrastructureProvider: AWS
   containerOrchestrationEngine: None
   parameters:
-    - JDK : ORACLE_JDK8
+    - JDK : OracleJDK-8
   includes:
     - CentOS-7.5
     - OracleJDK-8
     - Oracle-SE2-19.0
-   
   provisioners:
     - name: dev-wso2am-intg-deployment
       remoteRepository: "https://github.com/wso2/testgrid"
@@ -32,7 +31,7 @@ infrastructureConfig:
             ProductName: "wso2-apim"
 scenarioConfigs:
   - testType: TESTNG
-    remoteRepository: "https://github.com/TheRasanjana/apim-test-integration.git"
+    remoteRepository: "https://github.com/tharindu1st/apim-test-integration.git"
     name: integrationtests
     description: "integration tests"
     file: integrationtests/run-scenario.sh
