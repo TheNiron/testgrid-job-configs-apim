@@ -28,7 +28,7 @@ infrastructureConfig:
           file: jobs/intg-test-resources/wso2-intg-test-cfn.yaml
           inputParameters:
             parseInfrastructureScript: false
-            region: us-east-1
+            region: us-east-2
             DBPassword: "DB_Password"
             DBClass: "db.m4.large"
             EC2KeyPair: "deployment-dev"
