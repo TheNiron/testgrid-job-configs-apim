@@ -1,7 +1,7 @@
 # TestGrid Test Configuration Parameters
 # TODO use dash as the separator instead of camelCase.
 version: '0.9'
-emailToList: "niron@wso2.com"
+emailToList: "tharindua@wso2.com,niron@wso2.com"
 infrastructureConfig:
   iacProvider: CLOUDFORMATION
   infrastructureProvider: AWS
@@ -9,9 +9,14 @@ infrastructureConfig:
   parameters:
     - JDK : OracleJDK-8
   includes:
-    - RHEL-7.4
+    - Windows-2016
     - OracleJDK-8
+    - MySQL-8.0
+    - MySQL-5.7
+    - Oracle-SE2-12.1
     - Oracle-SE2-19.0
+    - SQLServer-SE-14.00
+    - Postgres-10.5
   provisioners:
     - name: dev-wso2am-intg-deployment
       remoteRepository: "https://github.com/wso2/testgrid"
@@ -31,7 +36,7 @@ infrastructureConfig:
             ProductName: "wso2-apim"
 scenarioConfigs:
   - testType: TESTNG
-    remoteRepository: "https://github.com/tharindu1st/apim-test-integration.git"
+    remoteRepository: "https://github.com/TheRasanjana/apim-test-integration.git"
     name: integrationtests
     description: "integration tests"
     file: integrationtests/run-scenario.sh
