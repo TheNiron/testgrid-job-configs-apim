@@ -12,11 +12,6 @@ infrastructureConfig:
     - Windows-2016
     - OracleJDK-8
     - MySQL-8.0
-    - MySQL-5.7
-    - Oracle-SE2-12.1
-    - Oracle-SE2-19.0
-    - SQLServer-SE-14.00
-    - Postgres-10.5
   provisioners:
     - name: dev-wso2am-intg-deployment
       remoteRepository: "https://github.com/wso2/testgrid"
@@ -52,7 +47,7 @@ scenarioConfigs:
       SQL_DRIVERS_LOCATION_UNIX: /opt/testgrid/sql-drivers/
       SQL_DRIVERS_LOCATION_WINDOWS: /testgrid/sql-drivers
       DBUsername: wso2carbon
-      TEST_MODE: RELEASE
+      TEST_MODE: SNAPSHOT
       USE_CUSTOM_TESTNG: "FALSE"
       WUM_PRODUCT_VERSION: 3.0
       WUM_CHANNEL: full
