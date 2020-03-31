@@ -37,7 +37,7 @@ scenarioConfigs:
     file: integrationtests/run-scenario.sh
     inputParameters:
       PRODUCT_CODE: wso2am
-      PRODUCT_GIT_URL: "https://github.com/TheRasanjana/product-apim"
+      PRODUCT_GIT_URL: "https://github.com/wso2/product-apim"
       PRODUCT_DIST_DOWNLOAD_API: https\://wso2.org/jenkins/job/products/job/product-apim_2.x/lastRelease/api/
       INFRA_LOCATION: workspace/testgrid"
       DEPLOYMENT_LOCATION: workspace/testgrid
