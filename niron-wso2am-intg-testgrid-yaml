@@ -11,7 +11,7 @@ infrastructureConfig:
   includes:
     - Windows-2016
     - OracleJDK-8
-    - MySQL-8.0
+    - MySQL-5.7
   provisioners:
     - name: dev-wso2am-intg-deployment
       remoteRepository: "https://github.com/TheRasanjana/testgrid"
