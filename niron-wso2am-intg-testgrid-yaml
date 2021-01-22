@@ -37,7 +37,7 @@ scenarioConfigs:
     file: integrationtests/run-scenario.sh
     inputParameters:
       PRODUCT_CODE: wso2am
-      PRODUCT_GIT_URL: "https://github.com/sahan29/product-apim.git"
+      PRODUCT_GIT_URL: "https://github.com/sahan29/product-apim"
       PRODUCT_DIST_DOWNLOAD_API: https\://wso2.org/jenkins/job/products/job/product-apim_2.x/lastRelease/api/
       INFRA_LOCATION: workspace/testgrid"
       DEPLOYMENT_LOCATION: workspace/testgrid
@@ -47,7 +47,7 @@ scenarioConfigs:
       SQL_DRIVERS_LOCATION_UNIX: /opt/testgrid/sql-drivers/
       SQL_DRIVERS_LOCATION_WINDOWS: /testgrid/sql-drivers
       DBUsername: wso2carbon
-      TEST_MODE: RELEASE
+      TEST_MODE: SNAPSHOT
       USE_CUSTOM_TESTNG: "FALSE"
       WUM_PRODUCT_VERSION: 3.0
       WUM_CHANNEL: full
